@@ -1,0 +1,27 @@
+@charset "UTF-8";
+div{
+  width: 100px;
+  height: 100px;
+  background-color: #D4A0BF;
+  /*Her kaldes animationen*/
+  animation-name: move-box;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/*Her definerer jeg min animation*/
+@keyframes move-box{
+    from{
+      transform: translateX(0px) rotateZ(0deg);
+      background-color: #D4A0BF;
+    }
+    to{
+      transform: translateX(300px) rotateZ(360deg);
+      background-color: #E64CA8;
+    }
+
+}
+
+
+}
